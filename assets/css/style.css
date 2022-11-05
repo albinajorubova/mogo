@@ -5,6 +5,16 @@ body {
   line-height: 1.6;
   margin: 0;
 }
+
+hr {
+  border: 0;
+  background-color: #e5e5e5;
+  display: block;
+  height: 1px;
+  width: 10px;
+  margin: 40px 0;
+}
+
 *,
 *:after,
 *:before {
@@ -198,10 +208,16 @@ h6 {
   padding: 80px 0;
 }
 
+.section--devices {
+  background: url("../img/devices/fon.png") center no-repeat;
+  background-size: cover;
+  padding-bottom: 0;
+}
+
 .section_header {
   width: 100%;
   max-width: 950px;
-  margin: 0 auto 40px;
+  margin: 0 auto 50px;
   text-align: center;
 }
 
@@ -215,6 +231,7 @@ h6 {
   font-size: 30px;
   color: #333;
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 
 .section_title:after {
@@ -330,4 +347,52 @@ h6 {
 .stat_text {
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.services {
+  display: flex;
+}
+
+.services_items {
+  flex: 1 1 0;
+  padding-left: 85px;
+  position: relative;
+  padding-right: 35px;
+}
+
+.services_icon {
+  position: absolute;
+  left: 28px;
+  top: 0;
+  z-index: 1px;
+}
+
+.services_title {
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.services_text {
+  font-size: 15px;
+  color: #999;
+}
+
+.devices {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.devices_item {
+  display: block;
+}
+
+.devices_item--iphone {
+  position: absolute;
+  bottom: -80px;
+  right: -50px;
+  z-index: 1;
 }
