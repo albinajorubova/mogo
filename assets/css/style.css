@@ -462,7 +462,6 @@ h6 {
   top: 50%;
   right: 20px;
   z-index: 1;
-  margin-top: ;
 
   transform: translateY(-50%) rotate(135deg);
 }
@@ -542,4 +541,79 @@ h6 {
 .reviews_btn-next {
   right: 0;
   transform: rotate(135deg);
+}
+
+.team {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team_item {
+  width: 380px;
+  background-color: #95e1d3;
+  position: relative;
+}
+
+.team_item:hover .team_img {
+  transform: translate3d(-10px, -10px, 0);
+}
+
+.team_item:hover .team_contact {
+  opacity: 1;
+}
+
+.team_item:hover .team_img img {
+  opacity: 0.1;
+}
+
+.team_img {
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+  transition: transform 0.2s linear;
+}
+
+.team_img img {
+  display: block;
+  transition: opacity 0.1 linear;
+}
+
+.team_contact {
+  opacity: 0;
+  width: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+
+  transition: opacity 0.2s linear;
+  cursor: pointer;
+}
+
+.team_title {
+  font-size: 14px;
+  color: #333333;
+  font-family: "Montserrat", regular;
+  text-transform: uppercase;
+  font-weight: 00;
+}
+.team_subtitle {
+  font-size: 14px;
+  color: #999;
+  font-style: italic;
+}
+.team_name {
+  width: 100%;
+
+  text-align: center;
+
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, 50%, 0);
+}
+.container-team {
+  padding-bottom: 110px;
 }
